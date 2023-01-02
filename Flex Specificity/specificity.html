@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Specificity</title>
+    <style>
+      /* 100 + 0 + 100 = 200 */
+      /*#container > #masai {
+        color: teal;
+      }*/
+      /* 100 */
+      #masai {
+        color: thistle;
+      }
+      /* 1 */
+      h1 {
+        color: blue;
+      }
+      /* 10 */
+      .school {
+        color: orange;
+      }
+      /* 1 + 0 + 1 = 2 */
+      div > h1 {
+        color: red;
+      }
+      /* 1 + 0 + 100 = 101 */
+      div > #masai {
+        color: magenta;
+      }
+      /* 1 + 0 + 10 = 11 */
+      div > .school {
+        color: green;
+      }
+      /* 100 + 0 + 10 = 110 */
+      /*#container > .school {
+        color: brown;
+      }*/
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1 class="school" id="masai">Masai School</h1>
+    </div>
+  </body>
+</html>

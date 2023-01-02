@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promises</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  //  let promise = new Promise(function (resolve, reject) {
+  //    resolve("Got drinks. Set up the dinner table");
+  //  });
+  //  let promise1 = new Promise(function (resolve, reject) {
+  //    reject("Did not get drinks. Prepare desserts");
+  //  });
+  //  console.log(promise);
+  //  promise.then((fromResolve) => console.log(fromResolve));
+  //  promise1.catch((fromReject) => console.log(fromReject));
+  //  console.log(promise.then());
+  //  function => executor fn
+
+  let completedAssignment = new Promise(function (resolve, reject) {
+    var isCompleted = false;
+    if (isCompleted) {
+      resolve("Completed all my assignments");
+    } else {
+      reject(
+        "I could not complete the assingments. Need some more time to work on it."
+      );
+    }
+  });
+
+  console.log(completedAssignment);
+  completedAssignment
+    .then((res) => console.log(res))
+    .catch((err) => console.log(err));
+</script>

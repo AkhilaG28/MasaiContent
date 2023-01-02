@@ -1,0 +1,1 @@
+Please trim the Self video at 18:00 mins

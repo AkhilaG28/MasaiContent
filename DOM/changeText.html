@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change text content</title>
+  </head>
+  <body>
+    <h1 id="head">Masai School</h1>
+    <button onclick="changeHeading()">Change heading</button>
+  </body>
+</html>
+
+<script>
+  function changeHeading() {
+    var heading = document.getElementById("head");
+    console.log(heading);
+    if (heading.innerText == "Masai School") {
+      heading.innerText = "Student friendly";
+    } else {
+      heading.innerText = "Masai School";
+    }
+  }
+</script>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LS get item</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  //localStorage.getItem(keyname)
+  var name = localStorage.getItem("studentName");
+  console.log(name, typeof name);
+
+  var arr = localStorage.getItem("studentarr");
+
+  arr = JSON.parse(arr);
+  console.log(arr, typeof arr);
+
+  var studentObj = {
+    name: "Cherry",
+    age: 12,
+    gender: "Male",
+  };
+
+  //  var studentJSOn = {
+  //      "name":"Cherry",
+  //      "age":12,
+  //      "gender":"Male"
+  //  }
+</script>

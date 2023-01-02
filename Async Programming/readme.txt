@@ -1,0 +1,1 @@
+Js synchronous, blocking, single threaded

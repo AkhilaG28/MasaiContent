@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Investors Layout</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      #parent {
+        /*border: 6px solid teal;*/
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+
+      #parent > div {
+        /*border: 2px solid crimson;*/
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 15px;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        /* top-left/top-right/bottom-right/bottom-left */
+      }
+
+      p + img {
+        width: 140px;
+      }
+
+      @media screen and (min-width: 500px) and (max-width: 800px) {
+        #parent {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media screen and (max-width: 499px) {
+        #parent {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Strategic Investors</h1>
+    <div id="parent">
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+          alt="Kunal Shah"
+        />
+        <h3>Kunal Shah</h3>
+        <p>Founder</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+          alt="logoCred"
+        />
+      </div>
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+          alt="Kunal Shah"
+        />
+        <h3>Kunal Shah</h3>
+        <p>Founder</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+          alt="logoCred"
+        />
+      </div>
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+          alt="Kunal Shah"
+        />
+        <h3>Kunal Shah</h3>
+        <p>Founder</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+          alt="logoCred"
+        />
+      </div>
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+          alt="Kunal Shah"
+        />
+        <h3>Kunal Shah</h3>
+        <p>Founder</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+          alt="logoCred"
+        />
+      </div>
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+          alt="Kunal Shah"
+        />
+        <h3>Kunal Shah</h3>
+        <p>Founder</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+          alt="logoCred"
+        />
+      </div>
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+          alt="Kunal Shah"
+        />
+        <h3>Kunal Shah</h3>
+        <p>Founder</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+          alt="logoCred"
+        />
+      </div>
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+          alt="Kunal Shah"
+        />
+        <h3>Kunal Shah</h3>
+        <p>Founder</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+          alt="logoCred"
+        />
+      </div>
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+          alt="Kunal Shah"
+        />
+        <h3>Kunal Shah</h3>
+        <p>Founder</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+          alt="logoCred"
+        />
+      </div>
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+          alt="Kunal Shah"
+        />
+        <h3>Kunal Shah</h3>
+        <p>Founder</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+          alt="logoCred"
+        />
+      </div>
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+          alt="Kunal Shah"
+        />
+        <h3>Kunal Shah</h3>
+        <p>Founder</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+          alt="logoCred"
+        />
+      </div>
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+          alt="Kunal Shah"
+        />
+        <h3>Kunal Shah</h3>
+        <p>Founder</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+          alt="logoCred"
+        />
+      </div>
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+          alt="Kunal Shah"
+        />
+        <h3>Kunal Shah</h3>
+        <p>Founder</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+          alt="logoCred"
+        />
+      </div>
+      <div>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png"
+          alt="Kunal Shah"
+        />
+        <h3>Kunal Shah</h3>
+        <p>Founder</p>
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+          alt="logoCred"
+        />
+      </div>
+    </div>
+  </body>
+</html>

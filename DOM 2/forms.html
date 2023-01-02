@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>With form tag</title>
+    <style></style>
+  </head>
+  <body>
+    <form id="loginForm">
+      <input id="username" type="text" placeholder="Enter Username" />
+      <input id="password" type="text" placeholder="Enter password" />
+      <input type="submit" />
+    </form>
+    <!--<h1 id="head"></h1>-->
+  </body>
+</html>
+
+<script>
+  document.querySelector("#loginForm").addEventListener("submit", printValues);
+
+  function printValues() {
+    event.preventDefault();
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    console.log(username, password);
+    var head = document.createElement("h1");
+    head.innerText = username;
+
+    var btn = document.createElement("button");
+    btn.textContent = "Click";
+    btn.addEventListener("click", eventObjFun);
+
+    document.querySelector("body").append(head, btn);
+
+    console.log(head);
+    //document.querySelector("#head").innerText = username;
+  }
+
+  function eventObjFun() {
+    console.log(event);
+    console.log(event.target);
+  }
+</script>
+
+<!-- createElement -->

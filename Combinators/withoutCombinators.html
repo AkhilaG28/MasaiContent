@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Without Combinators</title>
+    <style>
+      /* selector1 combinatorSymbol selector2 {} */
+      /* selector1 selector2 {} */
+      /*#parent p {
+        color: teal;
+      }*/
+      /* selector1 > selector2 {} */
+      #parent > p {
+        color: red;
+      }
+      /* selector1 ~ selector2 {} */
+      /*#parent ~ p {
+        background-color: thistle;
+      }*/
+      /* selector1  + selector2 {}*/
+      #parent + p,
+      h1 {
+        color: tomato;
+      }
+      #parent div > p {
+        background-color: violet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <div id="parent">
+      <p>Para 1</p>
+      <p>Para 2</p>
+      <p>Para 3</p>
+      <p>Para 4</p>
+      <p>Para 5</p>
+      <div>
+        <p>Para 8</p>
+        <p>Para 9</p>
+      </div>
+    </div>
+    <p>Para 6</p>
+    <p>Para 7</p>
+  </body>
+</html>
+
+<!--  -->
